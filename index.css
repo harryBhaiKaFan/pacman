@@ -1,0 +1,118 @@
+*{
+  margin:0;
+  padding:0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  user-select:none;
+}
+
+:root {
+  --theme:#222;
+  --fewColor:#fff;
+}
+
+body {
+  min-width:100vw;
+  color:var(--fewColor);
+  background:var(--theme);
+}
+/* *** loader here *** */
+ .loader{
+ 	position: absolute;
+ 	z-index:999;
+ 	width:100%;
+ 	height:100%;
+ 	display:flex;
+ 	align-items:center;
+ 	justify-content:center;
+ 	background:rgba(225,225,225,0.7);
+ }
+ .loader > .text{
+ 	color:#ff0;
+ 	font-weight:bold;
+ 	font-size:1.5rem;
+ 	font-family:cursive;
+ }
+/* *** header here *** */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  background:var(--theme);
+  padding:2vh 4vw;
+  font-family:impact;
+  max-height:15vh:
+}
+
+.cntn {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  min-width:20%;
+}
+#life {
+  font-size:1.1rem;
+  color:yellow;
+}
+#score {
+  font-size:1.1rem;
+  color:yellow;
+}
+#level{
+	font-size:1.1rem;
+  color:yellow;
+}
+
+/* *** screen here *** */
+#screen {
+  background: #000;
+  width: 100vw;
+  height:50vh;
+}
+
+/* *** contorlr here *** */
+#btn1{
+	grid-area:up;
+}
+
+#btn2{
+	grid-area:left;
+}
+
+#btn3{
+	grid-area:right;
+}
+
+#btn4{
+	grid-area:down;
+}
+.controls {
+  background: var(--theme);
+  display:grid;
+  padding:1vh 0vw;
+  height:35vh;
+  font-family:Verdana;
+  grid-template-areas:
+  'up      up'
+  'left right'
+	'down  down';
+}
+.btn{
+	font-size:1.2rem;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+.btn:hover{
+	font-size:0.6rem;
+}
+
+
+
+/****Media here****/
+
+/*
+ *  --> <= max-width ,
+ *  --> >= min-width ,
+*/
