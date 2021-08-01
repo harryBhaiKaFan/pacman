@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   user-select:none;
+  transition:all 0.5s;
 }
 
 :root {
@@ -26,11 +27,7 @@ body {
 	border-bottom:5vh solid transparent;
 }
 
-.bar{
-	width:5vw;
-	height:10vh;
-	background:hsla(50,50%,50%,1);
-}
+
 /* *** loader here *** */
  .loader{
  	position: absolute;
@@ -46,7 +43,7 @@ body {
  	display:flex;
  	width:60%;
  	align-items:center;
- 	justify-content: space-between;
+ 	justify-content: center;
  }
 /* *** header here *** */
 header {
