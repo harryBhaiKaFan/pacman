@@ -1,3 +1,0 @@
-function alien_Constructor(){
-	
-}
